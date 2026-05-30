@@ -51,7 +51,7 @@ const HeroSection = () => {
             </Link>
             
             <a 
-              href="https://wa.me/919876543210" // Replace with actual number
+              href="https://wa.me/917558568228" // Changed to new actual number
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-white text-gray-800 border-2 border-gray-100 px-8 py-4 rounded-full font-medium hover:border-secondary hover:text-secondary transition-all shadow-sm hover:shadow-md cursor-pointer"

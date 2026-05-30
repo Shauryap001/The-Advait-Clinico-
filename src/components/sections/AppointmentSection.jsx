@@ -16,9 +16,8 @@ const AppointmentSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log(formData);
-    alert("Appointment request submitted successfully!");
+    const message = `Hello Advait Clinico,%0A%0AI would like to request an appointment.%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Preferred Time:* ${formData.time || 'Any'}%0A*Health Concern:* ${formData.concern || 'Not specified'}%0A%0APlease let me know the availability.`;
+    window.open(`https://wa.me/917558568228?text=${message}`, '_blank');
   };
 
   return (
@@ -44,7 +43,7 @@ const AppointmentSection = () => {
 
               <div className="space-y-6">
                 <a 
-                  href="https://wa.me/919876543210" 
+                  href="https://wa.me/917558568228" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 bg-white/10 hover:bg-white/20 p-4 rounded-xl transition-colors backdrop-blur-sm border border-white/10 cursor-pointer"
@@ -59,7 +58,7 @@ const AppointmentSection = () => {
                 </a>
 
                 <a 
-                  href="tel:+919876543210"
+                  href="tel:+917558568228"
                   className="flex items-center gap-4 bg-white/10 hover:bg-white/20 p-4 rounded-xl transition-colors backdrop-blur-sm border border-white/10 cursor-pointer"
                 >
                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shrink-0 shadow-lg">
@@ -67,7 +66,7 @@ const AppointmentSection = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">Call Clinic Directly</h4>
-                    <p className="text-white/70 text-sm">+91 98765 43210</p>
+                    <p className="text-white/70 text-sm">+91 75585 68228</p>
                   </div>
                 </a>
               </div>
