@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1F4D3A;
+  --color-secondary: #D4A373;
+  --color-background: #F8F5F0;
+  --color-accent: #6B8E23;
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --font-hindi: 'Noto Sans Devanagari', sans-serif;
+  --font-hindi-alt: 'Hind', sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: #333;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
